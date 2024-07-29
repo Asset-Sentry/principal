@@ -1,21 +1,31 @@
-INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE
-CURSO DE TECNOLOGIA EM REDES DE COMPUTADORES
+Projeto Integrador Referente a Disciplina de Seminário de Orientação de Projeto Integrador
+IFRN 2024.1
+Alunos:
+1 - Edmar Pereira
+Matricula: 20171014050043
+Email: edmar.p@escolar.ifrn.edu.br
+2 - Matheus Brito Bezerra Cavalcanti
+Matricula: 20232014050039
+Email: brito.cavalcanti@escolar.ifrn.edu.br
+3 - Wesley Silva de Castro
+Matricula: 20192014050015
+Email: wesley.castro@escolar.ifrn.edu.br
 
-PROJETO INTEGRADOR
-
-
-“Sistema de Monitoramento de Climatização para Datacenters Baseado em Dispositivos IoT”
-
-RESUMO
+Título: Sistema de Monitoramento de Climatização para Datacenters Baseado em Dispositivos IoT
+<details>
+<summary>RESUMO</summary>
 
 O projeto visa desenvolver um sistema que utiliza dispositivos IoT para coleta, envio e armazenamento de dados de climatização em data centers. Além disso, contará com recurso dedicado à detecção de incêndio, interface gráfica para exibição de dados / gerenciamento dos alertas e ainda integração com telefonia VOIP. Este projeto é altamente relevante uma vez que monitorar esses parâmetros significa prover maior proteção dos ativos e consequentemente dos dados armazenados. Nesse contexto, o sistema pode detectar rapidamente quaisquer desvios dos parâmetros e acionar alertas em tempo real para a equipe responsável. Isso permite uma resposta imediata para corrigir problemas antes que possam causar danos aos equipamentos ou comprometer a segurança dos dados. Ao fornecer uma vigilância constante e inteligente do ambiente, essa solução contribui significativamente para a confiabilidade, disponibilidade e segurança dos serviços de TI essenciais para as organizações modernas. A entrega final deste projeto será um protótipo funcional do sistema que incluirá a integração de sensores com banco de dados através de conexão sem fio, acompanhamento em tempo real por meio de página web, gerenciamento e automação de alertas via interface gráfica e telefonia VOIP. Este projeto estabelece ligações significativas com diversas disciplinas do curso de Redes de Computadores. A disciplina de Programação para Redes é essencial para o desenvolvimento dos scripts que irão automatizar os processos de coleta e envio de dados. A disciplina de Administração Avançada de Serviços de Rede fornece os fundamentos necessários para criação e manipulação do banco de dados. Por fim, a disciplina de Implantação de Serviços VoIP é necessária para a automatização de alertas por meio de telefonia.
-
-INTRODUÇÃO
+</details>
+<details>
+<summary>INTRODUÇÃO</summary>
 
 Em um mundo cada vez mais dependente da tecnologia, a eficiência e a segurança dos data centers são vitais para operações empresariais ininterruptas. Manoel Veras (2011) destaca que as empresas buscam reduzir o consumo de energia elétrica, otimizar o uso de espaço físico, racionalizar recursos computacionais e garantir a segurança dos dados e de seus equipamentos.
 Os desafios de monitoramento e rastreamento de ativos em data centers estão cada vez mais crescentes. Denis Garcia (2013) observa que a indisponibilidade dos serviços de TI pode prejudicar ou paralisar operações empresariais  ou governamentais essenciais. Portanto, é necessário inserir um sistema auxiliar confiável para prevenir que o data center entre em colapso ou um incidente com mais agravantes. Nosso projeto é uma solução que usa sensores para monitorar em tempo real a climatização de ambientes sensíveis. Utilizando plataformas sem fio, o projeto demonstrará ser viável mesmo com restrições de recursos, oferecendo uma infraestrutura que permita monitorar, prevenir e alertar possíveis imprevistos com uma gestão proativa e resposta mais rápida.
+</details>
 
-JUSTIFICATIVA
+<details>
+<summary>JUSTIFICATIVA</summary>
 
 Nos últimos anos, a proteção de ativos que armazenam dados tem ganhado cada vez mais importância, especialmente no que diz respeito à integridade dos mesmos. Nesse contexto, propomos o desenvolvimento de um protótipo que permita:
 1. Monitoramento via interface gráfica: O sistema proposto permitirá que os administradores monitorem em tempo real a temperatura e a umidade do ar através de interface gráfica.
@@ -36,16 +46,19 @@ Administração básica de servidores de banco de dados (8).
 Configuração do protocolo SIP (6.1);
 Configuração de menus de auto atendimento (6.3); e
 Integração do Asterisk com outras soluções de VoIP (7).
+</details>
 
-OBJETIVO GERAL
+<details>
+<summary>OBJETIVO GERAL</summary>
 
 O propósito principal deste projeto integrador consiste na concepção de um sistema de monitoramento de climatização e alerta contra incêndio voltado para data centers utilizando dispositivos IoT. Esta iniciativa oferece a oportunidade de aplicar os conhecimentos adquiridos ao longo do curso de Redes de Computadores no IFRN. O projeto tem como meta integrar as disciplinas de Programação para Redes, Administração Avançada de Serviços de Rede e Implantação de Serviços VoIP, com o intuito de desenvolver um protótipo que possa otimizar o monitoramento de temperatura e umidade em ambientes de data centers. Ao alcançar este objetivo geral, almejamos demonstrar nossa habilidade em transformar conceitos teóricos em aplicações práticas, contribuindo assim para soluções tecnológicas que possam ter um impacto significativo na gestão de datacenters.
+</details>
 
-OBJETIVOS ESPECÍFICOS
+<summary>OBJETIVOS ESPECÍFICOS</summary>
 Configurar um ambiente com serviços de banco de dados, web e voip. Integração de sensores aos serviços instalados.
 
-ENTREGAS
-
+<details>
+<summary>ENTREGAS</summary>
 
 Sprint 01: Preparação do ambiente de desenvolvimento.
 Matheus: Pesquisa de dispositivos, sensores e outros componentes necessários para captação e envio dos dados coletados;
@@ -76,8 +89,9 @@ Sprint 6: Documentação e Apresentação
 Matheus: Criar manual de usuário;
 Edmar: Preparar um relatório técnico abrangente, documentando o processo de desenvolvimento; e
 Matheus: Preparar a apresentação final do projeto e a demonstração.
-
-REFERÊNCIAS
+</details>
+<details>
+<summary>REFERÊNCIAS</summary>
 
 Marco, A, D. A. Virtualização: Componente Central do Data Center. Rio de Janeiro: Brasport, 2011.
 
@@ -85,3 +99,4 @@ Garcia, Denis. Centro de Dados: Data Center, 2013(Artigo Científico)-Faculdade 
 Guarujá, São Paulo, 2013.
 
 Veras, Manoel. Cloud Computing: A Nova Arquitetura da TI / Manoel Veras - Rio de Janeiro, Brasport. 2012.
+</details>
