@@ -1,17 +1,22 @@
-Projeto Integrador Referente a Disciplina de Seminário de Orientação de Projeto Integrador
-IFRN 2024.1
-Alunos:
-1 - Edmar Pereira
-Matricula: 20171014050043
-Email: edmar.p@escolar.ifrn.edu.br
-2 - Matheus Brito Bezerra Cavalcanti
-Matricula: 20232014050039
-Email: brito.cavalcanti@escolar.ifrn.edu.br
-3 - Wesley Silva de Castro
-Matricula: 20192014050015
-Email: wesley.castro@escolar.ifrn.edu.br
+# Projeto Integrador Referente a Disciplina de Seminário de Orientação de Projeto Integrador - IFRN 2024.1 <br>
+## Título: Sistema de Monitoramento de Climatização para Datacenters Baseado em Dispositivos IoT.
 
-Título: Sistema de Monitoramento de Climatização para Datacenters Baseado em Dispositivos IoT
+<details>
+<summary>INTEGRANTES</summary>
+Alunos:<br>
+Edmar Pereira <br>
+Matricula: 20171014050043 <br>
+Email: edmar.p@escolar.ifrn.edu.br <br><br>
+Matheus Brito Bezerra Cavalcanti <br>
+Matricula: 20232014050039 <br>
+Email: brito.cavalcanti@escolar.ifrn.edu.br <br><br>
+Wesley Silva de Castro <br>
+Matricula: 20192014050015 <br>
+Email: wesley.castro@escolar.ifrn.edu.br <br><br>
+Orientador: <br>
+Prof. Ivanilson França
+</details>
+
 <details>
 <summary>RESUMO</summary>
 
@@ -53,50 +58,49 @@ Integração do Asterisk com outras soluções de VoIP (7).
 
 O propósito principal deste projeto integrador consiste na concepção de um sistema de monitoramento de climatização e alerta contra incêndio voltado para data centers utilizando dispositivos IoT. Esta iniciativa oferece a oportunidade de aplicar os conhecimentos adquiridos ao longo do curso de Redes de Computadores no IFRN. O projeto tem como meta integrar as disciplinas de Programação para Redes, Administração Avançada de Serviços de Rede e Implantação de Serviços VoIP, com o intuito de desenvolver um protótipo que possa otimizar o monitoramento de temperatura e umidade em ambientes de data centers. Ao alcançar este objetivo geral, almejamos demonstrar nossa habilidade em transformar conceitos teóricos em aplicações práticas, contribuindo assim para soluções tecnológicas que possam ter um impacto significativo na gestão de datacenters.
 </details>
-
+<details>
 <summary>OBJETIVOS ESPECÍFICOS</summary>
 Configurar um ambiente com serviços de banco de dados, web e voip. Integração de sensores aos serviços instalados.
-
+</details>
 <details>
 <summary>ENTREGAS</summary>
 
-Sprint 01: Preparação do ambiente de desenvolvimento.
-Matheus: Pesquisa de dispositivos, sensores e outros componentes necessários para captação e envio dos dados coletados;
-Wesley: Preparação do ambiente de virtualização incluindo instalação de sistema operacional, ferramentas de desenvolvimento / compilação e dependências; e
-Edmar: Levantamento de serviços e métodos necessários para coleta, envio, armazenagem, tratamento e automatização de alertas; 
+Sprint 01: Preparação do ambiente de desenvolvimento.<br>
+Matheus: Pesquisa de dispositivos, sensores e outros componentes necessários para captação e envio dos dados coletados;<br>
+Wesley: Preparação do ambiente de virtualização incluindo instalação de sistema operacional, ferramentas de desenvolvimento / compilação e dependências; e<br>
+Edmar: Levantamento de serviços e métodos necessários para coleta, envio, armazenagem, tratamento e automatização de alertas; <br><br>
 
-Sprint 02: Coleta e envio de dados para banco de dados.
-Edmar: Programação da plataforma de coleta e envio de dados;
-Wesley: Instalação e configuração de banco de dados; e
-Matheus: Montagem do circuito, testes e correção de erros.
+Sprint 02: Coleta e envio de dados para banco de dados.<br>
+Edmar: Programação da plataforma de coleta e envio de dados;<br>
+Wesley: Instalação e configuração de banco de dados; e<br>
+Matheus: Montagem do circuito, testes e correção de erros.<br><br>
 
-Sprint 03: Criação de interface gráfica.
-Wesley: Pesquisa de template / adaptação para o projeto;
-Matheus: Pesquisa de ferramentas de criação de gráficos / integração com banco de dados; e
-Edmar: Criação de ferramenta para habilitar/desabilitar funções do sistema.
+Sprint 03: Criação de interface gráfica.<br>
+Wesley: Pesquisa de template / adaptação para o projeto;<br>
+Matheus: Pesquisa de ferramentas de criação de gráficos / integração com banco de dados; e<br>
+Edmar: Criação de ferramenta para habilitar/desabilitar funções do sistema.<br><br>
 
-Sprint 04: Integração com sistema VoIP.
-Matheus: Instalação da plataforma Asterisk e dependências, configuração de usuários e extensões;
-Edmar: Criação de fluxograma para as consultas e alertas automatizados via VOIP;
-Wesley: Configuração de Asterisk Gateway Interface (AGI) para automatização de alertas.
+Sprint 04: Integração com sistema VoIP.<br>
+Matheus: Instalação da plataforma Asterisk e dependências, configuração de usuários e extensões;<br>
+Edmar: Criação de fluxograma para as consultas e alertas automatizados via VOIP;<br>
+Wesley: Configuração de Asterisk Gateway Interface (AGI) para automatização de alertas.<br><br>
 
-Sprint 05: Segurança e proteção de dados.
-Edmar: Análise de vulnerabilidades;
-Wesley: Correção de erros de vulnerabilidade; e
-Matheus: Testes de segurança.
+Sprint 05: Segurança e proteção de dados.<br>
+Edmar: Análise de vulnerabilidades;<br>
+Wesley: Correção de erros de vulnerabilidade; e<br>
+Matheus: Testes de segurança.<br><br>
 
-Sprint 6: Documentação e Apresentação
-Matheus: Criar manual de usuário;
-Edmar: Preparar um relatório técnico abrangente, documentando o processo de desenvolvimento; e
-Matheus: Preparar a apresentação final do projeto e a demonstração.
+Sprint 6: Documentação e Apresentação<br>
+Matheus: Criar manual de usuário;<br>
+Edmar: Preparar um relatório técnico abrangente, documentando o processo de desenvolvimento; e<br>
+Matheus: Preparar a apresentação final do projeto e a demonstração.<br><br>
 </details>
 <details>
 <summary>REFERÊNCIAS</summary>
 
-Marco, A, D. A. Virtualização: Componente Central do Data Center. Rio de Janeiro: Brasport, 2011.
+Marco, A, D. A. Virtualização: Componente Central do Data Center. Rio de Janeiro: Brasport, 2011.<br>
 
-Garcia, Denis. Centro de Dados: Data Center, 2013(Artigo Científico)-Faculdade do 
-Guarujá, São Paulo, 2013.
+Garcia, Denis. Centro de Dados: Data Center, 2013(Artigo Científico)-Faculdade do Guarujá, São Paulo, 2013.<br>
 
-Veras, Manoel. Cloud Computing: A Nova Arquitetura da TI / Manoel Veras - Rio de Janeiro, Brasport. 2012.
+Veras, Manoel. Cloud Computing: A Nova Arquitetura da TI / Manoel Veras - Rio de Janeiro, Brasport. 2012.<br>
 </details>
