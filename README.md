@@ -104,3 +104,21 @@ Garcia, Denis. Centro de Dados: Data Center, 2013(Artigo Científico)-Faculdade 
 
 Veras, Manoel. Cloud Computing: A Nova Arquitetura da TI / Manoel Veras - Rio de Janeiro, Brasport. 2012.<br>
 </details>
+
+<details>
+<summary>RELATÓRIOS ENTREGUES</summary>
+  
+### Relatório da Criação do Repositório
+
+### Relatório referente ao Sprint 01
+
+### Relatório referente ao Sprint 02
+
+### Relatório referente ao Sprint 03
+
+### Relatório referente ao Sprint 04
+
+### Relatório referente ao Sprint 05
+
+### Relatório referente ao Sprint 06
+</details>
