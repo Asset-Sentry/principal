@@ -1,5 +1,6 @@
 # Projeto Integrador Referente a Disciplina de Seminário de Orientação de Projeto Integrador - IFRN 2024.1 <br>
 ## Título: Sistema de Monitoramento de Climatização para Datacenters Baseado em Dispositivos IoT.
+![WhatsApp Image 2024-08-03 at 15 39 41](https://github.com/user-attachments/assets/5939a068-3fef-452c-86b7-30bcf24525cc)
 
 <details>
 <summary>INTEGRANTES</summary>
