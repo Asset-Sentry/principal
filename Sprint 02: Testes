@@ -1,5 +1,5 @@
 
-## **Sprint 02: Montagem do Circuito, Testes e Correção de Erros**
+## **Sprint 02: Testes **
 
 ### **3.3 Tarefa 03: Montagem do Circuito, Testes e Correção de Erros**
 
@@ -43,35 +43,4 @@ Após a montagem, procedemos com uma série de testes para validar a funcionalid
      **Figura 22: Monitor serial mostrando o sucesso da requisição.**
      _Fonte: Elaboração própria (2024)._
 
-3. **Correção de Erros:**
-   - Durante os testes, foram identificados diversos erros que requereram correções específicas. Entre eles estavam problemas de conexão instável, onde modificações no código foram necessárias para gerenciar melhor as tentativas de reconexão. Adicionalmente, erros de leitura de dados do sensor foram corrigidos através de calibrações mais precisas e otimizações no processamento de dados.
-
-   - Implementamos logs detalhados para rastrear eventos de erro e estabelecemos procedimentos para resolver problemas automaticamente, garantindo que o protótipo mantivesse a operação contínua com o mínimo de interrupções.
-
-#### **3.3.3 Verificação dos Dados no Banco de Dados**
-
-Após a execução dos testes e correção dos erros, utilizamos a ferramenta SQLyog para verificar a correta inserção dos dados na tabela de destino. Os dados de temperatura e umidade, capturados pelo sensor AHT10, foram registrados no banco de dados de forma eficaz. A consistência dos dados foi confirmada através de consultas SQL, validando a integridade do sistema desde a coleta até o armazenamento.
-
-**Figura 22: Verificação dos dados inseridos no banco de dados.**
-_Fonte: Elaboração própria (2024)._
-
-A verificação de dados é um passo crucial para garantir que o sistema não apenas coleta e transmite dados, mas também os armazena de forma confiável e precisa, permitindo análises futuras sem comprometimento da integridade dos dados.
-
-### **4 CONCLUSÃO**
-
-O Sprint 02 foi uma etapa essencial na implementação do projeto "Asset Sentry", focando na montagem do circuito e na identificação e correção de erros. Os testes rigorosos e as correções realizadas asseguraram que o sistema funcionasse conforme esperado, estabelecendo uma base sólida para os próximos desenvolvimentos. A abordagem sistemática para a solução de problemas garantiu a confiabilidade e eficácia do sistema, levando-nos a um passo mais próximo da conclusão do projeto.
-
-### **5 PARTICIPAÇÃO DE CADA MEMBRO**
-
-#### **5.1 Participação nas Issues**
-
-- A equipe trabalhou colaborativamente para resolver problemas encontrados durante o desenvolvimento, compartilhando insights e soluções de forma eficaz.
-
-#### **5.2 Participação em Commits**
-
-- Todos os membros contribuíram ativamente para o repositório de código, garantindo um fluxo de trabalho contínuo e integrado.
-
-### **6 REFERÊNCIAS**
-
-- Equipe Asset Sentry
 
