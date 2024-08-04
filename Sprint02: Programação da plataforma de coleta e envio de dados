@@ -13,3 +13,5 @@ Imprimir Dados de Temperatura na Porta Serial: Exibe os dados de temperatura.
 Imprimir Dados de Umidade na Porta Serial: Exibe os dados de umidade.
 Aguardar time definido ms: Pausa a execução durante o time definido antes de repetir o loop.
 Este fluxograma ilustra o fluxo de execução, desde a inicialização até a repetição do loop principal para a leitura e exibição dos dados do sensor AHT10.
+
+Desta forma temos uma podemos observar como se comporta o sistema de monitoramento de climatização de ambiente.
