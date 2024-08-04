@@ -1,0 +1,48 @@
+Imagem 1: DS18B20 com ESP32
+Descrição do Circuito:
+Componentes Utilizados:
+
+
+DS18B20: Um sensor de temperatura digital.
+ESP32: Uma placa de desenvolvimento que inclui Wi-Fi e Bluetooth, utilizada para controlar o sensor.
+Conexões:
+
+Pino VCC do DS18B20:
+Conectado ao pino 3V3 do ESP32 (fio vermelho).
+Pino GND do DS18B20:
+Conectado ao pino GND do ESP32 (fio preto).
+Pino de Dados do DS18B20:
+Conectado ao pino GPIO15 do ESP32 (fio amarelo).
+Resistor de Pull-Up:
+Um resistor de 4.7kΩ é usado entre o fio de dados e o VCC para garantir que a linha de dados esteja no estado alto quando o sensor não estiver transmitindo.
+Funcionamento:
+O DS18B20 é um sensor de temperatura que comunica os dados de temperatura de forma digital. Utiliza o protocolo 1-Wire, que requer apenas um fio de dados para comunicação, além do VCC e GND.
+O ESP32 lê os dados do sensor e pode processar ou enviar os dados para a nuvem, servidor ou interface gráfica.
+Imagem 2: Sensor de Temperatura e Umidade DHT22 com Arduino UNO
+Descrição do Circuito:
+Componentes Utilizados:
+
+DHT22: Um sensor de temperatura e umidade digital.
+Arduino UNO: Uma placa microcontroladora usada para ler dados do sensor.
+Conexões:
+
+Pino VCC do DHT22:
+Conectado ao pino 5V do Arduino UNO (fio vermelho).
+Pino GND do DHT22:
+Conectado ao pino GND do Arduino UNO (fio preto).
+Pino de Dados do DHT22:
+Conectado ao pino A0 do Arduino UNO (fio amarelo).
+Funcionamento:
+O DHT22 mede tanto a temperatura quanto a umidade e envia esses dados de forma digital para o Arduino UNO.
+Utiliza um único fio de dados para transmissão, similar ao DS18B20, e também requer um resistor de pull-up para o pino de dados.
+O Arduino processa esses dados, que podem ser exibidos em um monitor serial ou enviados para outras interfaces para análise.
+Conclusão:
+Ambos os circuitos utilizam sensores digitais conectados a placas de microcontroladores para coletar dados ambientais. Aqui estão algumas dicas adicionais:
+
+Simuladores Usados:
+
+Antes da prototipagem física, os circuitos podem ser idealizados em simuladores como o ThinkerCAD para garantir que as conexões e o código estejam corretos.
+Códigos e Bibliotecas:
+
+Para o DS18B20, pode-se usar a biblioteca DallasTemperature para facilitar a leitura do sensor.
+Para o DHT22, a biblioteca DHTlib é frequentemente utilizada.
