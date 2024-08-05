@@ -1,11 +1,10 @@
 
-## **Sprint 02: Testes **
+Sprint 02: Testes **
 
-### **3.3 Tarefa 03: Montagem do Circuito, Testes e Correção de Erros**
-
+3.3 Tarefa 03: Montagem do Circuito, Testes e Correção de Erros
 Nesta etapa do sprint, concentramos nossos esforços na montagem do circuito para a coleta de dados e na identificação e correção de erros que pudessem comprometer o funcionamento do sistema. A tarefa envolveu a montagem do circuito em uma protoboard, a realização de testes minuciosos com o protótipo e a aplicação de correções para quaisquer erros encontrados.
 
-#### **3.3.1 Montagem do Protótipo**
+3.3.1 Montagem do Protótipo
 
 Para montar o circuito de teste, utilizamos os seguintes materiais:
 
@@ -16,31 +15,31 @@ Para montar o circuito de teste, utilizamos os seguintes materiais:
 
 A montagem foi feita com base em um esquema detalhado que encontramos online, garantindo a interligação correta entre a placa Wemos, o sensor AHT10, e a protoboard. Esta configuração permitiu uma interface direta entre o sensor e a unidade de processamento, assegurando que os dados capturados pudessem ser transmitidos corretamente para a análise posterior.
 
-**Figura 20: Material utilizado na montagem do protótipo.**
-_Fonte: Elaboração própria (2024)._
+Figura 20: Material utilizado na montagem do protótipo.
+Fonte: Elaboração própria (2024).
 
-**Figura 21: Esquema da montagem do protótipo.**
-_Fonte: crashdown.de (2024)._
+Figura 21: Esquema da montagem do protótipo.
+Fonte: crashdown.de (2024).
 
-**Figura 22: Protótipo montado na protoboard.**
-_Fonte: Elaboração própria (2024)._
+Figura 22: Protótipo montado na protoboard.
+Fonte: Elaboração própria (2024).
 
-#### **3.3.2 Testes com o Protótipo e Correção de Erros**
+3.3.2 Testes com o Protótipo e Correção de Erros
 
 Após a montagem, procedemos com uma série de testes para validar a funcionalidade do sistema. O foco principal estava na capacidade do protótipo de coletar dados, enviar essas informações para o servidor, e lidar com quaisquer falhas ou erros que pudessem surgir durante a operação.
 
-1. **Teste com o Servidor Offline:**
+1.Teste com o Servidor Offline:
    - O primeiro teste foi realizado com o servidor offline, o que nos ajudou a avaliar o comportamento do sistema na ausência de conexão de rede.
    - Durante este teste, o sistema gerou corretamente a URL para o envio dos dados, mas enfrentamos um erro de "connection failed", que foi registrado no monitor serial da IDE do Arduino. Este erro indicou a necessidade de melhor manejo de exceções no código para lidar adequadamente com falhas de conexão.
 
-     **Figura 22: Monitor serial mostrando a URL gerada e o erro de conexão.**
-     _Fonte: Elaboração própria (2024)._
+Figura 22: Monitor serial mostrando a URL gerada e o erro de conexão.
+Fonte: Elaboração própria (2024).
 
-2. **Teste com o Servidor Online:**
+2.Teste com o Servidor Online:
    - O segundo teste foi executado com o servidor online, permitindo que o protótipo se conectasse à rede.
    - Nesta etapa, a comunicação com o banco de dados foi bem-sucedida, recebendo um status de requisição POST 200, o que confirmou que os dados estavam sendo transmitidos corretamente. Durante este teste, ajustes foram feitos para otimizar a estabilidade da conexão, garantindo que o sistema pudesse recuperar-se de interrupções temporárias na rede.
 
-     **Figura 22: Monitor serial mostrando o sucesso da requisição.**
-     _Fonte: Elaboração própria (2024)._
+Figura 22: Monitor serial mostrando o sucesso da requisição.
+Fonte: Elaboração própria (2024).
 
 
