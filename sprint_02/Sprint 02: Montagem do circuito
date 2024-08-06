@@ -54,3 +54,5 @@ Códigos e Bibliotecas:
 
 Para o DS18B20, pode-se usar a biblioteca DallasTemperature para facilitar a leitura do sensor.
 Para o DHT22, a biblioteca DHTlib é frequentemente utilizada.
+
+
