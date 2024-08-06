@@ -63,4 +63,3 @@ void loop() {
 
   delay(5000); // Espera 5 segundos antes da próxima leitura
 }
-
