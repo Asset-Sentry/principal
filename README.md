@@ -110,9 +110,9 @@ Veras, Manoel. Cloud Computing: A Nova Arquitetura da TI / Manoel Veras - Rio de
 <summary>RELATÓRIOS ENTREGUES</summary>
   
 ### Relatório da Criação do Repositório
-https://drive.google.com/file/d/1HEyJAd_q9P4OeOST7Djw9FxlD4I-L_3t/view?usp=drive_link
+https://drive.google.com/file/d/1RgvnI1hmCP3e9mv1UwFO-sIttmCTto06/view?usp=sharing
 ### Relatório referente ao Sprint 01
-
+https://drive.google.com/file/d/1ivSrA90Ior1UajEOYNrzU-7LNRx1a5n-/view?usp=sharing
 ### Relatório referente ao Sprint 02
 
 ### Relatório referente ao Sprint 03
