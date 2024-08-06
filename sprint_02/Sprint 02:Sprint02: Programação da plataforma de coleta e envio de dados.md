@@ -18,3 +18,5 @@ Desta forma temos uma podemos observar como se comporta o sistema de monitoramen
 
 Durante o desenvolvimento foi adicionado a conexão Wi-fi para a integração do código e os sensores do dispositivo.
 
+Abaixo temos a imagem do fluxograma do sistema:
+![image](https://github.com/user-attachments/assets/fdeab643-b637-43cd-95cb-0a9d3c7e27e5)
