@@ -5,3 +5,4 @@ São diversos sites que oferecem downloads de templates completos e grátis. Den
 ![image](https://github.com/user-attachments/assets/c94ff756-ba4f-4b98-a237-301e3b2dcdd9)<br>
 Escolhemos o template chamado PolluxUI pois o mesmo apresenta como característica a simplicidade, além de ser responsivo e com licença grátis.<br>
 ![image](https://github.com/user-attachments/assets/67762a38-508a-4834-911b-a9ac070c2b3a)
+
