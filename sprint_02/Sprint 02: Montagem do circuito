@@ -2,7 +2,6 @@ Imagem 1: DS18B20 com ESP32
 Descrição do Circuito:
 Componentes Utilizados:
 
-
 DS18B20: Um sensor de temperatura digital.
 ESP32: Uma placa de desenvolvimento que inclui Wi-Fi e Bluetooth, utilizada para controlar o sensor.
 Conexões:
