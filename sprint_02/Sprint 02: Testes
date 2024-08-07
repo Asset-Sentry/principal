@@ -1,5 +1,5 @@
 
-Sprint 02: Testes **
+Sprint 02: Testes 
 
 3.3 Tarefa 03: Montagem do Circuito, Testes e Correção de Erros
 Nesta etapa do sprint, concentramos nossos esforços na montagem do circuito para a coleta de dados e na identificação e correção de erros que pudessem comprometer o funcionamento do sistema. A tarefa envolveu a montagem do circuito em uma protoboard, a realização de testes minuciosos com o protótipo e a aplicação de correções para quaisquer erros encontrados.
@@ -8,7 +8,7 @@ Nesta etapa do sprint, concentramos nossos esforços na montagem do circuito par
 
 Para montar o circuito de teste, utilizamos os seguintes materiais:
 
-- Uma placa **Wemos D1 Mini**
+- Uma placa **Wemos D1 Mini
 - Um **sensor de temperatura e umidade AHT10**
 - Uma **protoboard**
 - **Jumpers** para conexões
