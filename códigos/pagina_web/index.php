@@ -1,3 +1,7 @@
+<?php
+require_once "conexao.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>PolluxUI Admin</title>
+  <title>Asset Sentry</title>
   <!-- base:css -->
   <link rel="stylesheet" href="vendors/typicons/typicons.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -16,8 +20,15 @@
   <link rel="stylesheet" href="css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-gauge@latest/dist/chartjs-chart-gauge.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js" charset="utf-8"></script>
+  <script src="plotly-2.32.0.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
+  <!--
   <div class="row" id="proBanner">
     <div class="col-12">
       <span class="d-flex align-items-center purchase-popup">
@@ -27,13 +38,17 @@
       </span>
     </div>
   </div>
+  -->
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex justify-content-center">
         <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
-          <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="images/coruja3.svg" alt="logo" style="width: 150px; height: 150px;"/>
+        </a>
+        
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/coruja.svg" alt="logo"/></a>
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="typcn typcn-th-menu"></span>
           </button>
@@ -41,6 +56,7 @@
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <ul class="navbar-nav mr-lg-2">
+          <!--
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="images/faces/face5.jpg" alt="profile"/>
@@ -57,6 +73,7 @@
               </a>
             </div>
           </li>
+          -->
           <li class="nav-item nav-user-status dropdown">
               <p class="mb-0">Last login was 23 hours ago.</p>
           </li>
@@ -188,6 +205,7 @@
           <li class="nav-item ml-0">
             <h4 class="mb-0">Dashboard</h4>
           </li>
+          <!--
           <li class="nav-item">
             <div class="d-flex align-items-baseline">
               <p class="mb-0">Home</p>
@@ -195,6 +213,7 @@
               <p class="mb-0">Main Dahboard</p>
             </div>
           </li>
+          -->
         </ul>
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-search d-none d-md-block mr-0">
@@ -208,6 +227,7 @@
             </div>
           </li>
         </ul>
+        
       </div>
     </nav>
     <div class="container-fluid page-body-wrapper">
@@ -387,9 +407,10 @@
             <a class="nav-link" href="index.html">
               <i class="typcn typcn-device-desktop menu-icon"></i>
               <span class="menu-title">Dashboard</span>
-              <div class="badge badge-danger">new</div>
+              <!--<div class="badge badge-danger">new</div>-->
             </a>
           </li>
+          <!--
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="typcn typcn-document-text menu-icon"></i>
@@ -484,31 +505,46 @@
               <span class="menu-title">Documentation</span>
             </a>
           </li>
+          -->
         </ul>
       </nav>
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-
+          <!--
           <div class="row">
             <div class="col-xl-6 grid-margin stretch-card flex-column">
-                <h5 class="mb-2 text-titlecase mb-4">Status statistics</h5>
+                <h5 class="mb-2 text-titlecase mb-4">Temperatura</h5>
               <div class="row">
                 <div class="col-md-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div class="d-flex justify-content-between align-items-center mb-2">
-                        <p class="mb-0 text-muted">Transactions</p>
-                        <p class="mb-0 text-muted">+1.37%</p>
+                        <p class="mb-0 text-muted">Temperatura</p>
+                        <p class="mb-0 text-muted">30C</p>
                       </div>
-                      <h4>1352</h4>
+                      <h4>CPD 01</h4>
                       <canvas id="transactions-chart" class="mt-auto" height="65"></canvas>
                     </div>
                   </div>
                 </div>
+                <div class="col-md-6 stretch-card grid-margin grid-margin-md-0">
+                  <div class="card">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <p class="text-muted">Umidade Relativa</p>
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h3 class="mb-">CPD 01</h3>
+                        <h3 class="mb-">78%</h3>
+                      </div>
+                      <canvas id="sales-chart-b" class="mt-auto" height="38"></canvas>
+                    </div>
+                  </div>
+                </div>
+                
                 <div class="col-md-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body d-flex flex-column justify-content-between">
+                      
                       <div class="d-flex justify-content-between align-items-center mb-2">
                         <div>
                           <p class="mb-2 text-muted">Sales</p>
@@ -527,8 +563,11 @@
                     </div>
                   </div>
                 </div>
+              
               </div>
+              
               <div class="row h-100">
+              
                 <div class="col-md-6 stretch-card grid-margin grid-margin-md-0">
                   <div class="card">
                     <div class="card-body d-flex flex-column justify-content-between">
@@ -541,6 +580,7 @@
                     </div>
                   </div>
                 </div>
+                ///
                 <div class="col-md-6 stretch-card">
                   <div class="card">
                     <div class="card-body">
@@ -581,7 +621,8 @@
               </div>
             </div>
           </div>
-
+          -->
+          <!--
           <div class="row">
             <div class="col-xl-4 grid-margin stretch-card">
               <div class="card">
@@ -722,6 +763,7 @@
               </div>
             </div>
           </div>
+          -->
 
           <div class="row">
             <div class="col-md-4 grid-margin stretch-card">
@@ -729,12 +771,13 @@
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
-                      <p class="mb-2 text-md-center text-lg-left">Total Expenses</p>
-                      <h1 class="mb-0">8742</h1>
+                      <p class="mb-2 text-md-center text-lg-left">Temperatura</p>
+                      <h1 class="mb-0" id="temperatura">Aguardando dados...</h1>
                     </div>
-                    <i class="typcn typcn-briefcase icon-xl text-secondary"></i>
+                    <img src="images/termometro.png" alt="Ícone de orçamento" style="width: 80px; height: 80px;" class="text-secondary">
+                    <div id="GaugTemp" style="width:600px;height:250px;"></div>
                   </div>
-                  <canvas id="expense-chart" height="80"></canvas>
+                  <!--<canvas id="expense-chart" height="80"></canvas>-->
                 </div>
               </div>
             </div>
@@ -743,31 +786,44 @@
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
-                      <p class="mb-2 text-md-center text-lg-left">Total Budget</p>
-                      <h1 class="mb-0">47,840</h1>
+                      <p class="mb-2 text-md-center text-lg-left">Umidade</p>
+                      <h1 class="mb-0" id="umidade">Aguardando dados...</h1>
                     </div>
-                    <i class="typcn typcn-chart-pie icon-xl text-secondary"></i>
+                    <img src="images/umidade.png" alt="Ícone de orçamento" style="width: 80px; height: 80px;" class="text-secondary">
                   </div>
-                  <canvas id="budget-chart" height="80"></canvas>
+                  <!--<canvas id="budget-chart" height="80"></canvas>-->
                 </div>
               </div>
             </div>
+            
             <div class="col-md-4 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
-                      <p class="mb-2 text-md-center text-lg-left">Total Balance</p>
-                      <h1 class="mb-0">$7,243</h1>
+                      <p class="mb-2 text-md-center text-lg-left">Status</p>
+                      <!--<div id="myDiv" style="width:600px;height:250px;"></div>-->
+                  
                     </div>
-                    <i class="typcn typcn-clipboard icon-xl text-secondary"></i>
                   </div>
-                  <canvas id="balance-chart" height="80"></canvas>
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Temperatura</h4>
+                  <canvas id="myChart" width="400" height="100"></canvas>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <h1></h1>
+          
+          <!--     -->
           <div class="row">
             <div class="col-md-12">
               <div class="card">
@@ -905,32 +961,155 @@
                 </div>    
             </div>        
         </footer>
-        <!-- partial -->
-      </div>
-      <!-- main-panel ends -->
-    </div>
-    <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
 
-  <!-- base:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
-  <!-- endinject -->
-  <!-- Plugin js for this page-->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <!-- End plugin js for this page-->
-  <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/todolist.js"></script>
-  <!-- endinject -->
-  <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
-  <!-- End custom js for this page-->
-</body>
+      <script>
+        // Função para buscar os dados de temperatura do arquivo getData.php
+        function fetchTemperatureData() {
+          // Faça uma requisição HTTP para getData.php para buscar os dados de temperatura
+          return fetch('getData.php')
+            .then(response => response.json())
+            .then(data => {
+              // Retorne apenas o valor da temperatura
+              return data.temperatura;
+            })
+            .catch(error => {
+              console.error('Erro ao buscar dados de temperatura:', error);
+            });
+        }
+    
+        // Função para atualizar o gráfico com os dados mais recentes
+        async function updateChart() {
+          const temperature = await fetchTemperatureData(); // Busca o valor da temperatura
+    
+          // Adiciona o valor da temperatura aos dados do gráfico
+          const now = new Date();
+          const label = `${now.getHours()}:${now.getMinutes()}`;
+          myChart.data.labels.push(label);
+          myChart.data.datasets[0].data.push(temperature);
+    
+          // Limita o número de pontos no gráfico para evitar sobrecarga
+          const maxDataPoints = 60; // Limite de 10 pontos no gráfico
+          if (myChart.data.labels.length > maxDataPoints) {
+            myChart.data.labels.shift();
+            myChart.data.datasets[0].data.shift();
+          }
+    
+          // Atualiza o gráfico
+          myChart.update();
+        }
+    
+        // Configuração inicial do gráfico
+        const initialConfig = {
+          type: 'line',
+          data: {
+            labels: [],
+            datasets: [{
+              label: 'Temperatura',
+              data: [],
+              fill: false,
+              borderColor: 'rgb(75, 192, 192)',
+              tension: 0.1
+            }]
+          },
+          options: {
+            // Adicione aqui as opções do gráfico, se necessário
+          }
+        };
+    
+        // Cria o gráfico inicial
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, initialConfig);
+    
+        // Atualiza o gráfico periodicamente (por exemplo, a cada 5 segundos)
+        setInterval(updateChart, 5000); // Altere o intervalo conforme necessário (em milissegundos)
+      </script>
 
-</html>
+<script>
+  $(document).ready(function(){
+      function atualizarDados() {
+          $.ajax({
+              url: 'getData.php',
+              type: 'GET',
+              dataType: 'json',
+              success: function(data) {
+                  // Atualiza o valor da temperatura e da umidade exibidos na página
+                  $('#temperatura').text(data.temperatura + " °C");
+                  $('#umidade').text(data.umidade + " %");
+                  // Chama a função novamente após um intervalo de tempo
+                  setTimeout(atualizarDados, 5000); // Atualiza a cada 5 segundos (5000 milissegundos)
+              },
+              error: function(jqXHR, textStatus, errorThrown) {
+                  console.log('Erro ao buscar dados:', textStatus, errorThrown);
+              }
+          });
+      }
+      
+      // Chama a função pela primeira vez
+      atualizarDados();
+  });
+  </script>
+<?php
+$sql = "SELECT * FROM parametros";
+$result = $conn->query($sql);
 
+if ($result->num_rows > 0) {
+    // Retorna os dados em formato JSON
+    $row = $result->fetch_assoc();
+
+}
+?>
+<script>
+  var data = [
+    {
+      type: "indicator",
+      mode: "gauge+number+delta",
+      value: "Aguardando dados",
+      number: { suffix: "°C" }, // Adiciona o sufixo °C ao valor
+      delta: { reference: <?php echo $row['temp_max']; ?>, increasing: { color: "red" } },
+      gauge: {
+        axis: { range: [null, 100], tickwidth: 1, tickcolor: "darkblue" },
+        bar: { color: "darkblue" },
+        bgcolor: "white",
+        borderwidth: 2,
+        bordercolor: "gray",
+        steps: [
+          { range: [0, 50], color: "cyan" },
+          { range: [50, 100], color: "royalblue" }
+        ],
+        threshold: {
+          line: { color: "red", width: 4 },
+          thickness: 0.75,
+          value: <?php echo $row['temp_max']; ?>
+        }
+      }
+    }
+  ];
+
+  var layout = {
+    width: 350,
+    height: 250,
+    margin: { t: 15, r: 30, l: 15, b: 15 },
+    paper_bgcolor: "lavender",
+    font: { color: "darkblue", family: "Arial" }
+  };
+
+  Plotly.newPlot('GaugTemp', data, layout);
+
+  function updateGauge() {
+    fetch('getData.php')
+      .then(response => response.json())
+      .then(data => {
+        var temperature = parseFloat(data.temperatura);
+        
+        // Update the gauge value
+        Plotly.restyle('GaugTemp', 'value', [temperature]);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }
+
+  // Update the gauge every 5 seconds
+  setInterval(updateGauge, 5000);
+</script>    
+  </body>
+  </html>
 
