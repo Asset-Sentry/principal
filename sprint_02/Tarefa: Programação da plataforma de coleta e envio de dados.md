@@ -1,4 +1,4 @@
-Plataforma utilizada para a codificação: linguagem em C do arduíno;
+##Plataforma utilizada para a codificação: linguagem em C do arduíno;<bd>
 fluxograma do código:
 
 Início: incialização do sistema;
